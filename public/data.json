@@ -1,0 +1,28 @@
+{
+    word: "Rya",
+    phonetic: "Rya",
+  - phonetic: [
+
+- {
+    text: "rya"
+    audio: "//"
+}
+    ],
+
+    origin: "late Middle English: from Swahili Afrikanaas, from Maragoli ",
+    -meanings: [
+        - {
+            partOfSpeach: "noun",
+         -  definations: [
+            - {
+                defination: "Eating something",
+                proverb: [
+                    text: "Kurya"
+                 ],
+                synonyms: [ ],
+                synonyms: [ ],
+            }
+         ],
+        }
+    ],
+},
