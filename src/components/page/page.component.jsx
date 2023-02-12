@@ -1,12 +1,13 @@
 import React from 'react'
 import { useState, useEffect } from "react";
-import Select from '../Select/Select.component';
+import Select from '../Select/Select';
 
 
 const Page = () => {
   const [word, setWord] = useState();
-  const [all, setAll] = useState([]);
-  const [main, setMain] = useState([]);
+const [all, setAll] = useState([]);
+const [main, setMain] = useState([]);
+const [audio, setAudio] = useState();
 
   const dataApi = async () => {
     const data = await fetch(
@@ -15,6 +16,9 @@ const Page = () => {
     const dataJ = await data.json();
     setAll(dataJ);
     setMain(dataJ[0]);
+    const url = dataJ[0].phonetics[0].audio;
+    const urla = url.replace("//ssl.", "https://");
+    setAudio(urla);
   };
   
   useEffect(() => {

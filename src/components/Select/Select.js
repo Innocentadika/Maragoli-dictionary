@@ -1,8 +1,8 @@
 import React from "react";
-import Definition from "../Definition/Definition.component";
+import Definition from "../Definition/Definition";
 import Example from '../Example/Example'
-import Synonym from "../Synonym/Synonym.component";
-import Antonyms from '../Antonyms/Antonyms.component'
+import Synonym from "../Synonym/Synonym";
+import Antonyms from '../Antonyms/Antonyms'
   
 const Select = ({ all, main, audio }) => {
   return (
@@ -19,9 +19,9 @@ const Select = ({ all, main, audio }) => {
               src={audio}
             ></audio>
           ) : (
-            <div className="color fs-3 text-center">Audio not found</div>
+            <div className="text-green-500 fs-3 text-center">Audio not found</div>
           )}
-          <div className="col-12 text-start my-3 text-capitalize fs-4 fw-bold">
+          <div className="col-12 text-start my-3 text-capitalize fs-4 font-bold">
             meaning & definitions :
           </div>
           <div>
@@ -29,7 +29,7 @@ const Select = ({ all, main, audio }) => {
               <Definition all={all} />
             </ol>
           </div>
-          <div className="col-12 text-start my-3 text-capitalize fs-4 fw-bold">
+          <div className="col-12 text-start my-3 text-capitalize fs-4 font-bold">
             examples :
           </div>
           <div>
@@ -37,7 +37,7 @@ const Select = ({ all, main, audio }) => {
               <Example all={all} />
             </ol>
           </div>
-          <div className="col-12 text-start my-3 text-capitalize fs-4 fw-bold">
+          <div className="col-12 text-start my-3 text-capitalize fs-4 font-bold">
             synonyms :
           </div>
           <div>
@@ -45,7 +45,7 @@ const Select = ({ all, main, audio }) => {
               <Synonym all={all} />
             </ol>
           </div>
-          <div className="col-12 text-start my-3 text-capitalize fs-4 fw-bold">
+          <div className="col-12 text-start my-3 text-capitalize fs-4 font-bold">
             antonyms :
           </div>
           <div>
