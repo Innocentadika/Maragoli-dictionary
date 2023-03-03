@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import Select from '../Select/Select';
+import data from '../../';
+
 
 
 const Page = () => {

@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { Routes, Route } from "react-router-dom";
-import Page from './components/page/page.component'
+import Page from './components/page/page'
 import Loader from './components/loader/loader'
 import './App.css';
 

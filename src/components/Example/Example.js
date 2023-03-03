@@ -9,7 +9,7 @@ const Example = ({ all }) => {
             return (
               <>
                 {Def.example ? (
-                  <li className="text-capitalize fs-5 text-start px-3">
+                  <li className="text-sm text-start p-1">
                     {Def.example}
                   </li>
                 ) : (

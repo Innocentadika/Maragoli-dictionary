@@ -9,7 +9,7 @@ const Antonyms = ({ all }) => {
             return Def.antonyms.map((Syn) => {
               return (
                 <>
-                  <li className="text-capitalize fs-5 mx-4 my-2">
+                  <li className="text-sm text-start p-1 mx-4 my-2">
                     {Syn}
                   </li>
                 </>

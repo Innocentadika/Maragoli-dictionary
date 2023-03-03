@@ -8,8 +8,8 @@ const Select = ({ all, main, audio }) => {
   return (
     <>
       <div className="p-4 bg-gray-700">
-        <div className="flex-row dark-theme">
-          <div className="col-12 text-center text-capitalize fs-1 font-bold text-decoration-underline">
+        <div className="flex-row dark-theme dark:text-white">
+          <div className="col-12 text-center text-2xl font-bold text-decoration-underline">
             {main.word}
           </div>
           {audio ? (
@@ -19,9 +19,9 @@ const Select = ({ all, main, audio }) => {
               src={audio}
             ></audio>
           ) : (
-            <div className="text-green-500 fs-3 text-center">Audio not found</div>
+            <div className="text-green-600  text-center">Audio unavailable</div>
           )}
-          <div className="col-12 text-start my-3 text-capitalize fs-4 font-bold">
+          <div className="col-12 text-start my-3 font-extrabold">
             meaning & definitions :
           </div>
           <div>
@@ -29,7 +29,7 @@ const Select = ({ all, main, audio }) => {
               <Definition all={all} />
             </ol>
           </div>
-          <div className="col-12 text-start my-3 text-capitalize fs-4 font-bold">
+          <div className="col-12 text-start my-3 font-extrabold">
             examples :
           </div>
           <div>
@@ -37,7 +37,7 @@ const Select = ({ all, main, audio }) => {
               <Example all={all} />
             </ol>
           </div>
-          <div className="col-12 text-start my-3 text-capitalize fs-4 font-bold">
+          <div className="col-12 text-start my-3 font-extrabold">
             synonyms :
           </div>
           <div>
@@ -45,7 +45,7 @@ const Select = ({ all, main, audio }) => {
               <Synonym all={all} />
             </ol>
           </div>
-          <div className="col-12 text-start my-3 text-capitalize fs-4 font-bold">
+          <div className="col-12 text-start my-3 font-extrabold">
             antonyms :
           </div>
           <div>

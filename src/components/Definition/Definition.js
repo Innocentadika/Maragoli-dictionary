@@ -8,7 +8,7 @@ const Definition = ({ all }) => {
           return Means.definitions.map((Def) => {
             return (
               <>
-                <li className="text-capitalize fs-5 text-start">
+                <li className=" text-sm text-start p-1">
                   {Def.definition}
                 </li>
                 <hr />
